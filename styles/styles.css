@@ -1,0 +1,410 @@
+@charset "UTF-8";
+/* Обнулення  */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+ul,
+li,
+button,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: hsl(200, 15%, 8%);
+}
+
+.dark-theme {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(207, 26%, 17%);
+}
+
+body.dark-theme .theme {
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme main {
+  background-color: hsl(207, 26%, 17%);
+}
+
+body.dark-theme input {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme input::-moz-placeholder {
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme input::placeholder {
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme .main__lookfor-filter_btn-link,
+body.dark-theme .dropdown_menu,
+body.dark-theme .dropdown_menu li a,
+body.dark-theme .main__countries-info,
+body.dark-theme .main__countries-info a {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme .details__main-back {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  border: 3px solid hsl(209, 23%, 22%);
+}
+
+body.dark-theme .details__main-back a {
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme .details__main-information_general-borders div {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  border: 3px solid hsl(209, 23%, 22%);
+}
+
+body.dark-theme .details__main-information_general-borders div a {
+  color: hsl(0, 0%, 100%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header h1 {
+  font-weight: 800;
+}
+.header button {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(200, 15%, 8%);
+  background: none;
+  text-align: center;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.main {
+  background-color: hsl(0, 0%, 98%);
+  padding-top: 50px;
+  padding-bottom: 44px;
+}
+.main__lookfor {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.main__lookfor-input {
+  position: relative;
+}
+.main__lookfor-input_search {
+  background: white;
+  width: 480px;
+  border: none;
+  outline: none;
+  padding: 30px 60px;
+  border-radius: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.main__lookfor-input_search::-moz-placeholder {
+  color: hsl(0, 0%, 52%);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.main__lookfor-input_search::placeholder {
+  color: hsl(0, 0%, 52%);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.main__lookfor-input_search.dark-element::-moz-placeholder {
+  color: hsl(0, 0%, 100%);
+}
+.main__lookfor-input_search.dark-element::placeholder {
+  color: hsl(0, 0%, 100%);
+}
+.main__lookfor-filter {
+  position: relative;
+}
+.main__lookfor-filter_btn {
+  position: relative;
+}
+.main__lookfor-filter_btn-link {
+  display: block;
+  width: 220px;
+  padding: 25px;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: hsl(200, 15%, 8%);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.main__lookfor-filter_btn-link.dark-element {
+  color: hsl(0, 0%, 100%);
+}
+.main__countries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.main__countries-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 265px;
+  border-radius: 15px;
+  background-color: white;
+}
+.main__countries-info_img {
+  width: 265px;
+  height: 160px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.main__countries-info_img img {
+  width: 265px;
+  height: 160px;
+}
+.main__countries-info_general {
+  padding-left: 25px;
+  padding-bottom: 35px;
+}
+.main__countries-info_general-name {
+  margin-bottom: 20px;
+}
+.main__countries-info_general-name a {
+  color: hsl(200, 15%, 8%);
+  font-weight: 800;
+  font-size: 16px;
+}
+.main__countries-info_general-data {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.main__countries-info_general-data span {
+  font-weight: 300;
+}
+
+.input-icon {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-size: 20px;
+}
+
+.filter-icon {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 20px;
+}
+
+.dropdown_menu {
+  width: 220px;
+  padding-top: 20px;
+  padding-left: 25px;
+  border: none;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: 4px;
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu-active {
+  display: block;
+}
+
+.dropdown_item {
+  display: block;
+  width: 100%;
+  padding-bottom: 15px;
+  clear: both;
+  font-weight: 300;
+  color: hsl(200, 15%, 8%);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: 15px;
+}
+
+.dropdown_item-dark {
+  color: hsl(0, 0%, 100%);
+}
+
+.details__main {
+  padding-bottom: 150px;
+}
+.details__main-back {
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  background: white;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  border: 3px solid hsl(0, 0%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details__main-back_link {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: hsl(200, 15%, 8%);
+  padding-left: 12px;
+}
+.details__main-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details__main-information_img {
+  width: 560px;
+  height: 400px;
+}
+.details__main-information_general {
+  max-width: 600px;
+  width: 100%;
+}
+.details__main-information_general-header {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.details__main-information_general-indexes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.details__main-information_general-borders {
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.details__main-information_general-borders div {
+  padding: 6px 20px;
+  background-color: white;
+  outline: none;
+  border: 3px solid hsl(0, 0%, 98%);
+  text-align: center;
+}
+.details__main-information_general-borders div a {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: hsl(200, 15%, 8%);
+  cursor: pointer;
+}
+
+@media (max-width: 1340px) {
+  .details__main-information {
+    gap: 10px;
+  }
+  .details__main-information_general {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+@media (max-width: 935px) {
+  .details__main-information {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 95px;
+  }
+  .details__main-information_general {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header h1 {
+    font-size: 22px;
+  }
+  .main__lookfor-input_search {
+    width: 350px;
+  }
+  .main__countries {
+    justify-content: center;
+  }
+  .details__main-information_general {
+    max-width: 400px;
+    width: 100%;
+  }
+  .details__main-information_general-indexes {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .details__main-information_img {
+    width: 327px;
+    height: 200px;
+  }
+}/*# sourceMappingURL=styles.css.map */

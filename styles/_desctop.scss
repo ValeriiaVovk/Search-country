@@ -1,0 +1,283 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h1 {
+        font-weight: 800;
+    }
+
+    button {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: hsl(200, 15%, 8%);
+        background: none;
+        text-align: center;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header-icon {
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.main {
+    background-color: hsl(0, 0%, 98%);
+    padding-top: 50px;
+    padding-bottom: 44px;
+
+    &__lookfor {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+
+        &-input {
+            position: relative;
+
+            &_search {
+                background: white;
+                width: 480px;
+                border: none;
+                outline: none;
+                padding: 30px 60px;
+                border-radius: 15px;
+                font-family: "Nunito Sans", sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            &_search::placeholder {
+                color: hsl(0, 0%, 52%);
+                font-family: "Nunito Sans", sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+            }
+    
+            &_search.dark-element::placeholder {
+                color: hsl(0, 0%, 100%);
+            }
+        }
+
+        &-filter {
+            position: relative;
+            &_btn {
+                position: relative;
+
+                &-link {
+                    display: block;
+                    width: 220px;
+                    padding: 25px;
+                    border: none;
+                    outline: none;
+                    background: white;
+                    border-radius: 15px;
+                    font-family: "Nunito Sans", sans-serif;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: hsl(200, 15%, 8%);
+                    appearance: none;
+                }
+
+                &-link.dark-element {
+                    color: hsl(0, 0%, 100%);
+                }
+            }
+
+        }
+    }
+
+    &__countries {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 265px;
+            border-radius: 15px;
+            background-color: white;
+
+            &_img {
+                width: 265px;
+                height: 160px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+
+                img {
+                    width: 265px;
+                    height: 160px;
+                }
+            }
+
+            &_general {
+                padding-left: 25px;
+                padding-bottom: 35px;
+
+                &-name {
+                    margin-bottom: 20px;
+
+                    a {
+                        color: hsl(200, 15%, 8%);
+                        font-weight: 800;
+                        font-size: 16px;
+                    }
+                }
+
+                &-data {
+                    font-weight: 600;
+                    margin-bottom: 10px;
+
+                    span {
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.input-icon {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 20px;
+}
+
+.filter-icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+}
+
+.dropdown_menu {
+    width: 220px;
+    padding-top: 20px;
+    padding-left: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 4px;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1000;
+}
+
+.dropdown-menu-active {
+    display: block;
+}
+
+.dropdown_item {
+    display: block;
+    width: 100%;
+    padding-bottom: 15px;
+    clear: both;
+    font-weight: 300;
+    color: hsl(200, 15%, 8%);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: 15px;
+}
+.dropdown_item-dark {
+    color: hsl(0, 0%, 100%);;
+}
+
+.details__main {
+    padding-bottom: 150px;
+
+    &-back {
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        background: white;
+        outline: none;
+        cursor: pointer;
+        margin-bottom: 80px;
+        margin-top: 80px;
+        border: 3px solid hsl(0, 0%, 98%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_link {
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: hsl(200, 15%, 8%);
+            padding-left: 12px;
+        }
+    }
+
+    &-information {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_img {
+            width: 560px;
+            height: 400px;
+        }
+
+        &_general {
+            max-width: 600px;
+            width: 100%;
+
+            &-header {
+                font-weight: 800;
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+
+            &-indexes {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 70px;
+            }
+
+            &-borders {
+                font-weight: 600;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: center;
+
+                div {
+                    padding: 6px 20px;
+                    background-color: white;
+                    outline: none;
+                    border: 3px solid hsl(0, 0%, 98%);
+                    text-align: center;
+
+                    a {
+                        text-align: center;
+                        font-family: "Nunito Sans", sans-serif;
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: hsl(200, 15%, 8%);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

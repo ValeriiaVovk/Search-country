@@ -1,0 +1,93 @@
+/* Обнулення  */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+ul,
+li,
+button,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: hsl(200, 15%, 8%);
+}
+
+.dark-theme {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(207, 26%, 17%);
+}
+
+body.dark-theme .theme {
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme main {
+  background-color: hsl(207, 26%, 17%);
+}
+
+body.dark-theme input {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme input::placeholder {
+  color: hsl(0%, 0%, 100%);
+}
+
+body.dark-theme .main__lookfor-filter_btn-link,
+body.dark-theme .dropdown_menu,
+body.dark-theme .dropdown_menu li a,
+body.dark-theme .main__countries-info,
+body.dark-theme .main__countries-info a {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0%, 0%, 100%);
+}
+
+body.dark-theme .details__main-back {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0%, 0%, 100%);
+  border: 3px solid hsl(209, 23%, 22%);
+}
+
+body.dark-theme .details__main-back a {
+  color: hsl(0%, 0%, 100%);
+}
+
+body.dark-theme .details__main-information_general-borders div {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0%, 0%, 100%);
+  border: 3px solid hsl(209, 23%, 22%);
+}
+
+body.dark-theme .details__main-information_general-borders div a {
+  color: hsl(0%, 0%, 100%);
+}

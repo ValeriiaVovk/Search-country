@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Countries</title>
+</head>
+<body>
+    <header class="header container">
+        <h1>Where in the world?</h1>
+        <button class="theme"><ion-icon name="moon" class="header-icon"></ion-icon> Dark mode</button>
+    </header>
+    <main class="main container">
+        <article class="main__lookfor">
+            <form>
+                <div class="main__lookfor-input">
+                    <input type="text" placeholder="Search for a country..." class="main__lookfor-input_search">
+                    <ion-icon name="search" class="input-icon" id="icon-search"></ion-icon>
+                </div>
+            </form>
+            <!-- <div class="main__lookfor-filter">
+                <select name="regions" id="regions" class="main__lookfor-filter_select">
+                    <option class="option-first">Filter by Region</option>
+                    <option value="Africa">Africa</option>
+                    <option value="America">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Ocenia">Ocenia</option>
+                </select>
+            </div> -->
+            <div class=" main__lookfor-filter dropdown">
+                <div class="main__lookfor-filter_btn">
+                    <a class="main__lookfor-filter_btn-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filter by Region</a>
+                    <ion-icon name="chevron-down-outline" class="filter-icon"></ion-icon>
+                </div>
+                <ul class="dropdown_menu">
+                    <li><a href="" class="dropdown_item" data-region="Africa">Africa</a></li>
+                    <li><a href="" class="dropdown_item" data-region="Americas">Americas</a></li>
+                    <li><a href="" class="dropdown_item" data-region="Asia">Asia</a></li>
+                    <li><a href="" class="dropdown_item" data-region="Europe">Europe</a></li>
+                    <li><a href="" class="dropdown_item" data-region="Oceania">Oceania</a></li>
+                </ul>
+            </div>
+        </article>
+
+        <section class="main__countries">
+            <!-- <div class="main__countries-info">
+                <div class="main__countries-info_img" style="background: url(${country.flags.svg}); background-repeat: no-repeat; background-size: cover; background-position: top center;">
+                    <img src="" alt="">
+                </div>
+                <div class="main__countries-info_general">
+                    <p class="main__countries-info_general-name">Germany</p>
+                    <p class="main__countries-info_general-data">Population: <span>81,770,900</span></p>
+                    <p class="main__countries-info_general-data">Region: <span>Europe</span></p>
+                    <p class="main__countries-info_general-data">Capital: <span>Berlin</span></p>
+                </div>
+            </div> -->
+        </section>
+    </main>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
